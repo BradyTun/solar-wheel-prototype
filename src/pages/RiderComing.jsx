@@ -123,7 +123,7 @@ function RiderComing() {
                     <>
                         <div className="flex flex-col items-center">
                             <span className="text-6xl mb-2">🚴</span>
-                            <h2 className="text-2xl font-bold text-gray-900">A <b>solar rider</b>is on the way!</h2>
+                            <h2 className="text-2xl font-bold text-gray-900">A <b>solar rider</b> is on the way!</h2>
                             <p className="text-gray-600">
                                 Estimated arrival in {timer} second{timer !== 1 && 's'}.
                             </p>
