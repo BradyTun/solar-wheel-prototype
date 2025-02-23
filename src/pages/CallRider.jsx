@@ -30,21 +30,7 @@ function CallRider() {
 
     // Get user's current location
     useEffect(() => {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(
-                (position) =>
-                    setUserCoords([
-                        position.coords.latitude,
-                        position.coords.longitude,
-                    ]),
-                (error) => {
-                    console.error('Error fetching geolocation:', error);
-                    setUserCoords([21.8867023, 96.0607179]); // fallback coordinates
-                }
-            );
-        } else {
-            setUserCoords([51.505, -0.09]);
-        }
+            setUserCoords([21.8861671,96.063105]); // fallback coordinates
     }, []);
 
     // Generate multiple rider coordinates around the user's location in a fixed pattern
@@ -116,7 +102,6 @@ function CallRider() {
                             id="location"
                             name="location"
                             type="text"
-                            required
                             value={locationInput}
                             onChange={(e) => setLocationInput(e.target.value)}
                             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-amber-500 focus:border-amber-500"

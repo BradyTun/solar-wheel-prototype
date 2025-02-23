@@ -51,10 +51,10 @@ function CountdownTimer({ hours }) {
 
 function RiderComing() {
     const navigate = useNavigate();
-    const locationState = useLocation()?.state || {};
+    // const locationState = useLocation()?.state || {};
     // Use the static coordinate as the default user location
-    const userCoords = locationState.userCoords && locationState.userCoords.length === 2 ? locationState.userCoords : [21.8867023, 96.0607179];
-    const riderStart = locationState.riderCoords && locationState.riderCoords.length === 2 ? locationState.riderCoords : [userCoords[0] - 0.01, userCoords[1] + 0.01];
+    const userCoords = [21.8861671,96.063105];
+    const riderStart = [userCoords[0] - 0.01, userCoords[1] + 0.01];
     const [timer, setTimer] = useState(5);
     const [riderPosition, setRiderPosition] = useState(riderStart);
     const [showArrivalPopup, setShowArrivalPopup] = useState(false);
