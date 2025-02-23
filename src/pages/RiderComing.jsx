@@ -109,7 +109,7 @@ function RiderComing() {
                 {timer === 0 ? (
                     <>
                         <p className="text-gray-600 mb-4">
-                            Rider will collect the battery again in 4 hours.
+                            Rider will collect the powercell again in 4 hours.
                         </p>
                         <CountdownTimer hours={4} />
                         <button
@@ -145,7 +145,7 @@ function RiderComing() {
                     <div className="bg-white p-6 rounded-lg shadow-lg text-center">
                         <h2 className="text-2xl font-bold mb-4">Rider has arrived!</h2>
                         <p className="text-gray-600 mb-4">
-                            Rider will collect the battery again in 4 hours.
+                            Rider will collect the powercell again in 4 hours.
                         </p>
                         <CountdownTimer hours={4} />
                         <button
