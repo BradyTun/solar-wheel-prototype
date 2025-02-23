@@ -17,8 +17,8 @@ function Login() {
     <div className="min-h-screen bg-gradient-to-r from-amber-300 to-amber-500 flex items-center justify-center">
       <div className="max-w-md w-full bg-white rounded-lg shadow-lg p-8">
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-amber-600 mb-2">Solar Rider</h1>
-          <p className="text-gray-600 mb-6">Power when you need it</p>
+          <h1 className="text-4xl font-bold text-amber-600 mb-2">Solar Wheel 🚴</h1>
+          <p className="text-gray-600 mb-6">Power Anytime Anywhere</p>
         </div>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
